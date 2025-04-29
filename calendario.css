@@ -1,0 +1,253 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f0f0f0;
+  }
+  
+  .calendario {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cabecalho h2 {
+    margin: 0;
+  }
+  
+  .cabecalho button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .dias div {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .dias div:hover {
+    background-color: #ddd;
+  }
+  
+  .hoje {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .com-anotacao {
+    background-color: #28a745 !important;
+    color: white;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  .modal-content h3 {
+    margin-top: 0;
+  }
+  
+  .modal-content textarea {
+    width: 100%;
+    resize: none;
+  }
+  
+  .botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .calendario {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .cabecalho h2 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  
+  .cabecalho button {
+    font-size: 16px;
+    padding: 5px 10px;
+    flex: 1;
+    max-width: 70px;
+  }
+  
+  .dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .dias div {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .dias div:hover {
+    background-color: #ddd;
+  }
+  
+  .hoje {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .com-anotacao {
+    background-color: #28a745 !important;
+    color: white;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 10;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .modal-content h3 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  
+  .modal-content textarea {
+    width: 100%;
+    resize: none;
+    font-size: 0.9rem;
+  }
+  
+  .botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Responsivo para telas pequenas */
+  @media (max-width: 500px) {
+    .dias div, .dias-semana div {
+      font-size: 0.75rem;
+      padding: 8px;
+    }
+  
+    .cabecalho button {
+      padding: 4px 8px;
+      font-size: 14px;
+    }
+  
+    .modal-content {
+      padding: 15px;
+    }
+  }
+  

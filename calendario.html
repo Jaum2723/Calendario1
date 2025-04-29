@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda Calendário</title>
+  <link rel="stylesheet" href="calendario.css">
+</head>
+<body>
+  <div class="calendario">
+    <div class="cabecalho">
+      <button id="mesAnterior">«</button>
+      <h2 id="mesAno"></h2>
+      <button id="mesProximo">»</button>
+    </div>
+    <div class="dias-semana">
+      <div>Dom</div>
+      <div>Seg</div>
+      <div>Ter</div>
+      <div>Qua</div>
+      <div>Qui</div>
+      <div>Sex</div>
+      <div>Sáb</div>
+    </div>
+    <div id="dias" class="dias"></div>
+  </div>
+
+  <!-- Modal para anotações -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="dataSelecionada"></h3>
+      <textarea id="anotacao" rows="5" placeholder="Digite sua anotação..."></textarea>
+      <div class="botoes">
+        <button id="salvar">Salvar</button>
+        <button id="fechar">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="calendario.js"></script>
+</body>
+</html>
+
